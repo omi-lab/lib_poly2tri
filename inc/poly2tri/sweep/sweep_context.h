@@ -32,6 +32,8 @@
 #ifndef SWEEP_CONTEXT_H
 #define SWEEP_CONTEXT_H
 
+#include "lib_platform/Globals.h"
+
 #include <list>
 #include <vector>
 #include <cstddef>
@@ -48,7 +50,9 @@ struct Node;
 struct Edge;
 class AdvancingFront;
 
-class SweepContext {
+class SweepContext
+{
+  LIB_PLATFORM_NONCOPYABLE(SweepContext);
 public:
 
 /// Constructor

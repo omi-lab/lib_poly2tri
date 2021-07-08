@@ -39,6 +39,8 @@
 #ifndef SWEEP_H
 #define SWEEP_H
 
+#include "lib_platform/Globals.h"
+
 #include <vector>
 
 namespace p2t {
@@ -51,7 +53,10 @@ class Triangle;
 
 class Sweep
 {
+  LIB_PLATFORM_NONCOPYABLE(Sweep);
 public:
+
+  Sweep()=default;
 
   /**
    * Triangulate

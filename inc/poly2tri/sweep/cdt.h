@@ -36,6 +36,8 @@
 #include "sweep_context.h"
 #include "sweep.h"
 
+#include "lib_platform/Globals.h"
+
 /**
  *
  * @author Mason Green <mason.green@gmail.com>
@@ -46,6 +48,7 @@ namespace p2t {
 
 class CDT
 {
+  LIB_PLATFORM_NONCOPYABLE(CDT);
 public:
 
   /**
